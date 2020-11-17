@@ -13,10 +13,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "apos-to-lex-form": "^1.0.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "natural": "^2.1.5",
+    "sentiment": "^5.0.2",
+    "stopword": "^1.0.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",
+    "@types/lodash": "^4.14.165",
+    "@types/natural": "^2.1.1",
+    "@types/stopword": "^1.0.0",
     "nodemon": "^2.0.6",
     "ts-node": "^9.0.0",
     "tslint": "^6.1.3",
