@@ -5,9 +5,17 @@ import * as _ from "lodash";
 // import natural, { DamerauLevenshteinDistance } from 'natural';
 import SW from 'stopword';
 // import * as aposToLexForm from 'apos-to-lex-form';
+import cors from 'cors';
 
 const app = express()
-const port = 3000
+const port = 4000
+  // @ts-ignore
+const dataArr = data.default;
+app.use(cors({
+  origin: 'http://localhost:3000'
+  // React App destination is on port 3000
+  // make this a config later
+}))
 
 app.use(bodyParser.json());
 
@@ -88,6 +96,6 @@ export function convert(data: string) {
   var sentiment = new Sentiment();
   var result = sentiment.analyze(data);
   console.log(result);
+  // token to see more context
   console.log(SW.removeStopwords(result.tokens));
-
 }
