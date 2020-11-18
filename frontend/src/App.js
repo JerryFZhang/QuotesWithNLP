@@ -62,6 +62,7 @@ class App extends Component {
                     {/* <CardImg top width='100%' src={launch.rocket.imageURL} alt='Card image cap' /> */}
                     {/* <CardTitle className='pt-3'><b>{launch.name}</b> */}
                     <CardText>
+                      {quote.en}
                       {/* Rocket: <Linkable props={launch.rocket}></Linkable><br /> */}
                       {/* Location: <Linkable props={launch.location}></Linkable><br />/ */}
                       {/* Launch Pad: <Linkable props={launch.location.pads[0]}></Linkable><br /> */}
